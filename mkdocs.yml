@@ -1,5 +1,5 @@
 site_name: Kira Night Rain's
-site_url: https://KiraNightRain.github.io/KB/
+site_url: https://NightRain5212.github.io/docs/
 
 theme:
   name: material
@@ -26,6 +26,7 @@ theme:
     - search.suggest
     - search.highlight
     - search.share
+    - navigation.footer
 
   palette:
     
@@ -45,20 +46,27 @@ theme:
       primary: indigo
       accent: indigo
     
-extra:
-  consent:
-    title: Cookie consent
-    description: >- 
-      We use cookies to recognize your repeated visits and preferences, as well
-      as to measure the effectiveness of our documentation and whether users
-      find what they're searching for. With your consent, you're helping us to
-      make our documentation better.
-    privacy_policy: https://www.mkdocs.org/privacy-policy/
-    cookie_name: mkdocs_consent
-    actions:
-      - accept
-      - decline
-      - manage
-
 plugins:
   - search
+  - git-revision-date-localized:
+      enable_creation_date: true
+  - git-authors
+
+extra:
+  analytics:
+    provider: google
+    property: G-3LVJPB5XL9
+
+
+markdown_extensions:
+  - pymdownx.arithmatex:
+      # generic: true 选项让插件能够识别标准的 LaTeX 定界符，
+      # 例如 $$...$$ 用于块级公式, $...$ 用于行内公式。
+      generic: true
+  
+
+# 在 extra_javascript 部分加载 MathJax
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
