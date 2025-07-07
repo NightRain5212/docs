@@ -1,0 +1,1232 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://NightRain5212.github.io/docs/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/%E7%89%9B%E9%A1%BF%E8%BF%90%E5%8A%A8%E5%AE%9A%E5%BE%8B/">
+      
+      
+        <link rel="prev" href="../%E7%83%AD%E5%8A%9B%E5%AD%A6%E7%AC%AC%E4%BA%8C%E5%AE%9A%E5%BE%8B/">
+      
+      
+        <link rel="next" href="../%E7%9B%B8%E5%AF%B9%E8%AE%BA/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+    
+    
+      
+        <title>牛顿运动定律 - Kira Night Rain's</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=roboto:300,300i,400,400i,700,700i%7Croboto+mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"roboto";--md-code-font:"roboto mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-3LVJPB5XL9"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-3LVJPB5XL9",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-3LVJPB5XL9",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="pink" data-md-color-accent="pink">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../.." title="Kira Night Rain&#39;s" class="md-header__button md-logo" aria-label="Kira Night Rain's" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 1 9 9l-8 3 8 3 3 8 3-8 8-3-8-3z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Kira Night Rain's
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              牛顿运动定律
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="pink" data-md-color-accent="pink"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="分享" aria-label="分享" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Welcome to KiraNightRain's
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../%E5%88%9A%E4%BD%93%E7%9A%84%E5%AE%9A%E8%BD%B4%E8%BD%AC%E5%8A%A8/" class="md-tabs__link">
+          
+  
+  
+  大学物理
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/%E4%B8%80%E9%98%B6%E9%80%BB%E8%BE%91/" class="md-tabs__link">
+          
+  
+  
+  离散数学
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Kira Night Rain&#39;s" class="md-nav__button md-logo" aria-label="Kira Night Rain's" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 1 9 9l-8 3 8 3 3 8 3-8 8-3-8-3z"/></svg>
+
+    </a>
+    Kira Night Rain's
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Welcome to KiraNightRain's
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    大学物理
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            大学物理
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%88%9A%E4%BD%93%E7%9A%84%E5%AE%9A%E8%BD%B4%E8%BD%AC%E5%8A%A8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    刚体的定轴转动
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%8A%9F%E4%B8%8E%E8%83%BD/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    功与能
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%8A%A8%E9%87%8F%E4%B8%8E%E8%A7%92%E5%8A%A8%E9%87%8F/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    动量与角动量
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%B8%A9%E5%BA%A6%E5%92%8C%E6%B0%94%E4%BD%93%E5%8A%A8%E7%90%86%E8%AE%BA/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    温度和气体动理论
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%83%AD%E5%8A%9B%E5%AD%A6%E7%AC%AC%E4%B8%80%E5%AE%9A%E5%BE%8B/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    热力学第一定律
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%83%AD%E5%8A%9B%E5%AD%A6%E7%AC%AC%E4%BA%8C%E5%AE%9A%E5%BE%8B/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    热力学第二定律
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    牛顿运动定律
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    牛顿运动定律
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      牛顿三大运动定律
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      常见的几种力
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="常见的几种力">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      重力
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      弹性力
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      流体曳力
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      表面张力
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      万有引力
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      电磁力
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      强力
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      弱力
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      牛顿定律解题
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      非惯性系与惯性力
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%9B%B8%E5%AF%B9%E8%AE%BA/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    相对论
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E8%B4%A8%E7%82%B9%E8%BF%90%E5%8A%A8%E5%AD%A6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    质点运动学
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/%E4%B8%80%E9%98%B6%E9%80%BB%E8%BE%91/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    离散数学
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      牛顿三大运动定律
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      常见的几种力
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="常见的几种力">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      重力
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      弹性力
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      流体曳力
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      表面张力
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      万有引力
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      电磁力
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      强力
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      弱力
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      牛顿定律解题
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      非惯性系与惯性力
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>牛顿运动定律</h1>
+
+<h2 id="_1">牛顿三大运动定律<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>第一定律</strong>（惯性定律）<ul>
+<li>任何物体都保持静止或匀速直线运动的状态，除非作用在它上面的力迫使它改变这种状态</li>
+</ul>
+</li>
+<li><strong>第二定律</strong><ul>
+<li>运动的变化与所加的动力成正比，并且发生 在力所沿的直线方向</li>
+<li>质量(mass)它是物体惯性大小的量度，也称惯性质量。</li>
+</ul>
+</li>
+</ul>
+<div class="arithmatex">\[\vec F = m\vec a\]</div>
+<div class="arithmatex">\[\vec F = \frac{d\vec p}{dt}=\frac{d}{dt}m\vec v\]</div>
+<ul>
+<li><strong>第三定律</strong><ul>
+<li>作用力与反作用力，力是物体之间的相互作用 , 力是成对出现的 , 而且性质相同</li>
+</ul>
+</li>
+</ul>
+<h2 id="_2">常见的几种力<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h3 id="_3">重力<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<ul>
+<li>地球表面附近的物体都受到地球的吸引作用，这种由于地球吸引使物体受到的力叫做重力。</li>
+<li>在重力作用下，任何物体产生的加速度都是重力加速度<span class="arithmatex">\(g\)</span>，力的方向和加速度的方向一样竖直向下。</li>
+<li><span class="arithmatex">\(\vec G = m \vec g\)</span></li>
+</ul>
+<h3 id="_4">弹性力<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>发生形变的物体，由于要恢复原状</strong>，对它接触的物体会产生力的作用，即<strong>弹力</strong>。</li>
+<li><strong>正压力</strong>：互相压紧的两个物体在其接触面上都会产生对对方的弹性力作用。</li>
+<li><strong>拉力</strong>：拉紧的绳对被拉的物体产生的力。</li>
+<li><strong>张力</strong>：拉紧的绳各段之间的相互作用力。</li>
+<li><strong>弹簧弹力</strong>：弹簧被拉伸或压缩时对物体产生的力。满足胡克定律<span class="arithmatex">\(\vec f = -k \vec x\)</span></li>
+<li><strong>滑动摩擦力</strong>：两个相互接触的物体<strong>沿着接触面的方向有相对滑动</strong>时，在各自的接触面上受到的阻碍相对滑动的力。方向总是与相对滑动的方向相反。</li>
+<li>滑动摩擦力的大小与正压力成正比，与滑动速度无关。其中<span class="arithmatex">\(\mu_k\)</span>为滑动摩擦系数，与接触面的材料和表面的状态有关</li>
+</ul>
+<div class="arithmatex">\[f_k=\mu_kN\]</div>
+<ul>
+<li><strong>静摩擦力</strong>：当接触面的两个物体<strong>相对静止但有相对滑动的趋势</strong>时，它们之间产生的阻碍相对滑动的摩擦力是静摩擦力。</li>
+<li>静摩擦力的大小是可以改变的。</li>
+<li>静摩擦力有一定限度，这个是<strong>最大静摩擦力</strong>。<strong>最大静摩擦力与正压力成正比</strong>。其中<span class="arithmatex">\(\mu_s\)</span>是静摩擦系数，与接触面的材料和表面的状态有关。<span class="arithmatex">\(f_{s\space max}=\mu_s N\)</span></li>
+<li>对同样的两个接触面，<span class="arithmatex">\(\mu_s\)</span>总是大于<span class="arithmatex">\(\mu_k\)</span></li>
+</ul>
+<h3 id="_5">流体曳力<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>流体曳力</strong>：一个物体<strong>在流体中(气体或液体)和流体有相对运动</strong>时，物体会<strong>受到流体的阻力</strong>。其方向与相对流体的速度方向相反。</li>
+<li>相对速率较小，流体可以从物体周围平顺地流过时，曳力大小<span class="arithmatex">\(f_d\)</span>与相对速率成正比。比例系数k取决于物体的大小和形状以及流体的性质。</li>
+</ul>
+<div class="arithmatex">\[f_d=kv\]</div>
+<ul>
+<li>相对速率较大时，一致在物体的后方出现流体漩涡时，物体在空气中运动时曳力大小如下。<span class="arithmatex">\(\rho\)</span>是空气密度，<span class="arithmatex">\(A\)</span>是物体有效的横截面积，<span class="arithmatex">\(C\)</span>是曳引系数。</li>
+</ul>
+<div class="arithmatex">\[f_d=\frac{1}{2}C\rho Av^2\]</div>
+<ul>
+<li>物体在流体中下落时，加速度会随速度的增大而减小，以致于速度足够大时，曳力会和重力平衡导致物体匀速下落。物体在流体中下落的最大速率叫<strong>终极速率</strong>。空气中运动的物体(速度足够大)的终极速率如下</li>
+</ul>
+<div class="arithmatex">\[v_t=\sqrt{\frac{2mg}{C\rho A}}\]</div>
+<h3 id="_6">表面张力<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<ul>
+<li>液体表面总是处于一种绷紧的状态，归因于页面各部分之间存在着相互拉紧的力，叫做<strong>表面张力</strong>。其方向沿着液面(其切面)并垂直于液面的边界线，大小与边界线的长度成正比.</li>
+</ul>
+<div class="arithmatex">\[F=\gamma l\]</div>
+<ul>
+<li><span class="arithmatex">\(\gamma\)</span>为表面张力系数，由液体的种类及其温度决定。</li>
+</ul>
+<h3 id="_7">万有引力<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<ul>
+<li>任何两个质点都互相吸引，力是平方反比力</li>
+</ul>
+<div class="arithmatex">\[f=\frac{Gm_1m_2}{r^2}\]</div>
+<ul>
+<li>其中的质量反映了物体的引力性质，是物体与其他物体相互吸引的性质的量度。叫引力质量。</li>
+</ul>
+<h3 id="_8">电磁力<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<ul>
+<li>电磁力指带电的粒子或宏观物体间的作用力</li>
+<li>库仑定律：两个静止的点电荷作用力大小如下</li>
+</ul>
+<div class="arithmatex">\[f=\frac{kq_1q_2}{r^2}\]</div>
+<ul>
+<li>运动的电荷相互间除了有电力作用外，还有磁力作用，磁力实际上是电力的一种表现。</li>
+<li>电荷之间的电磁力是以光子为传递媒介的</li>
+</ul>
+<h3 id="_9">强力<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>将原子核内的质子以及中子紧紧束缚在一起的力</strong>。这种存在于质子，中子，介子等强子之间的作用力是强力。</li>
+<li>其本质上是夸克所带的色荷之间的作用力--色力的表现。色力以胶子为传递媒介。</li>
+<li>强力的力程，即力的作用可及范围非常短。</li>
+</ul>
+<h3 id="_10">弱力<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
+<ul>
+<li>弱力也是各种粒子之间的相互作用，仅在粒子间的某些反应中才显示出重要性，</li>
+<li>弱力以中间玻色子为传递媒介，力程比强力还要短。</li>
+</ul>
+<h2 id="_11">牛顿定律解题<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h2>
+<h2 id="_12">非惯性系与惯性力<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h2>
+<ul>
+<li>惯性系性质：<strong>相对于惯性系做匀速直线运动的任何其他参考系一定是惯性系</strong>。</li>
+<li><strong>牛顿第二定律在非惯性系中不成立</strong>。<ul>
+<li>设物体质量<span class="arithmatex">\(m\)</span>在某一惯性系<span class="arithmatex">\(S\)</span>下，在外力<span class="arithmatex">\(\vec F\)</span>的作用下产生加速度<span class="arithmatex">\(\vec a\)</span>，有<span class="arithmatex">\(\vec F = m \vec a\)</span></li>
+<li>另一参考系<span class="arithmatex">\(S'\)</span>相对于<span class="arithmatex">\(S\)</span>以加速度<span class="arithmatex">\(\vec a_0\)</span>平动，在<span class="arithmatex">\(S'\)</span>中，质点的加速度是<span class="arithmatex">\(\vec a'\)</span></li>
+<li>有运动相对性可知，<span class="arithmatex">\(\vec a = \vec a' +\vec a_0\)</span></li>
+<li>代入得<span class="arithmatex">\(\vec F = m\vec a = m(\vec a' + \vec a_0)=m \vec a'+m\vec a_0\)</span></li>
+<li>故<span class="arithmatex">\(m\vec a' == \vec F +(-m\vec a_0)\)</span></li>
+<li>这说明在<span class="arithmatex">\(S'\)</span>下牛顿第二定律不成立</li>
+</ul>
+</li>
+<li>为了在非惯性系中形式地应用牛二定律，必须引入的力叫做<strong>惯性力</strong>。它的大小为质点的质量和此<strong>非惯性系相对于惯性系的加速度</strong>的乘积。方向与此加速度的方向相反。以<span class="arithmatex">\(\vec F_i\)</span>表示惯性力。有</li>
+</ul>
+<div class="arithmatex">\[\vec F_i = -m\vec a_0\]</div>
+<ul>
+<li>故在非惯性系中</li>
+</ul>
+<div class="arithmatex">\[\vec F +\vec F_i = m\vec a'\]</div>
+<ul>
+<li>惯性力是虚拟力，不是真实存在的力，不是物体间的相互作用，没有反作用力。</li>
+<li>在转动参考系中，惯性力<span class="arithmatex">\(\vec F_i = m\omega^2\vec r\)</span>，方向与<span class="arithmatex">\(\vec r\)</span>相同，沿圆的半径向外，称为惯性离心力。</li>
+</ul>
+
+
+
+
+
+
+
+  
+    
+  
+  
+    
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="最后更新">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2025年7月7日 04:58:34 UTC">2025年7月7日</span>
+  </span>
+
+    
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="创建日期">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2025年7月7日 04:58:34 UTC">2025年7月7日</span>
+  </span>
+
+    
+    
+      
+  
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="贡献者">
+      
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 4a4 4 0 0 1 4 4 4 4 0 0 1-4 4 4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 10c4.42 0 8 1.79 8 4v2H4v-2c0-2.21 3.58-4 8-4"/></svg>
+      
+    </span>
+    <nav>
+      
+        <a href="mailto:498187073@qq.com">NightRain5212</a>
+    </nav>
+  </span>
+
+    
+    
+  </aside>
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="页脚" >
+        
+          
+          <a href="../%E7%83%AD%E5%8A%9B%E5%AD%A6%E7%AC%AC%E4%BA%8C%E5%AE%9A%E5%BE%8B/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 热力学第二定律">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              <div class="md-ellipsis">
+                热力学第二定律
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../%E7%9B%B8%E5%AF%B9%E8%AE%BA/" class="md-footer__link md-footer__link--next" aria-label="下一页: 相对论">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                下一页
+              </span>
+              <div class="md-ellipsis">
+                相对论
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.instant.progress", "navigation.instant.prefetch", "navigation.tracking", "navigation.tabs", "navigation.prune", "navigation.top", "navigation.path", "navigation.sections", "search.suggest", "search.highlight", "search.share", "navigation.footer"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
